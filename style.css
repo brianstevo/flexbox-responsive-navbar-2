@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+  }
+  nav{
+    border:5px solid #ffcc5c;
+  }
+  nav > ul{
+      display: flex;
+      font-size: 25px;
+  }
+nav >ul>li{
+  background-color: #26d0c9;
+   color: azure;
+   padding: 12px 10px;
+   text-align: center;
+   flex:auto;
+   
+}
+nav >ul>li:hover{
+color:#26d0c9;
+background-color: azure;
+}
+
+@media all and (max-width: 600px) {
+    nav>ul >li{
+    flex:1 1 50%;
+    }
+    nav >ul{
+        flex-wrap: wrap;
+    }
+}
+
+/* For Smartphones */
+@media all and (max-width: 430px) {
+    nav >ul{
+        flex-direction:row;
+    }
+    nav>ul >li{
+        flex:1 1 100%;
+        }
+}
